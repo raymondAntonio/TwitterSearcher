@@ -1,0 +1,46 @@
+{
+  "name": "twitsearcher",
+  "version": "1.0.0",
+  "description": "twits searcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Raymond Antonio Wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.5",
+    "browserify": "^11.0.1",
+    "express": "^4.13.3",
+    "flux": "^2.0.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^0.15.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-open": "^1.0.0",
+    "jquery": "^2.1.4",
+    "react": "^0.13.3",
+    "react-dom": "~0.14.0",
+    "react-router": "^0.13.3",
+    "reactify": "^1.1.1",
+    "toastr": "^2.1.0",
+    "twit": "^2.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "jest-cli": "*",
+    "react-addons-test-utils": "~0.14.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  }
+}
